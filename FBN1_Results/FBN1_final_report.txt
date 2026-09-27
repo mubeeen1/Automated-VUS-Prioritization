@@ -1,0 +1,7 @@
+Genomic_Pos     Protein_Change     Biological_Domain
+---------------------------------------------------------------------------
+48445478        p.G1939W           EGF-like 33; calcium-binding | C-terminal domain
+48445478        p.G1939R           EGF-like 33; calcium-binding | C-terminal domain
+48448804        p.G1879R           EGF-like 31; calcium-binding | C-terminal domain
+48452574        p.G1845R           EGF-like 30; calcium-binding | C-terminal domain
+48441805        p.G2027R           EGF-like 35; calcium-binding | C-terminal domain
