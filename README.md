@@ -40,7 +40,7 @@ The pipeline is fully automated through a single shell command. It requires four
 **Example (Fibrillin-1 / Marfan Syndrome):**
 ```bash
 ./run_pipeline.sh clinvar.vcf.gz FBN1 15 P35555
-
+```bash
 ### Pipeline Outputs
 For every executed gene, the pipeline generates:
 1. `[GENE]_targets.txt`: Raw ClinVar extraction.
