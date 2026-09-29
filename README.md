@@ -40,3 +40,20 @@ The pipeline is fully automated through a single shell command. It requires four
 **Example (Fibrillin-1 / Marfan Syndrome):**
 ```bash
 ./run_pipeline.sh clinvar.vcf.gz FBN1 15 P35555
+
+### Pipeline Outputs
+For every executed gene, the pipeline generates:
+1. `[GENE]_targets.txt`: Raw ClinVar extraction.
+2. `[GENE]_annotated_vus.csv`: Complete Ensembl VEP annotation dataset.
+3. `top_[GENE]_candidates.csv`: The filtered, high-confidence shortlist.
+4. `[GENE]_final_report.txt`: A human-readable alignment of candidates to biological domains.
+5. `[GENE]_structure.cif` / `.pdb`: The AI-generated 3D structural model.
+
+## 🔬 Validated Phenotypes & Case Studies
+This framework is actively being used to computationally reclassify VUS across diverse genetic landscapes:
+* **Familial Hypercholesterolemia (*LDLR*):** Successfully mapped high-confidence VUS to disulfide-bond disruption in ligand-binding domains.
+* **Marfan Syndrome (*FBN1*):** Overcame AlphaFold length limitations via *de novo* ESMFold prediction to identify steric clash mechanisms destroying calcium-coordinating cbEGF hinges.
+* **Hypertrophic Cardiomyopathy (*MYBPC3*):** *Currently underway.*
+
+## ✉️ Contact & Citation
+Developed by Mobeen Nasir as an independent bioinformatics research initiative. For inquiries or collaboration, contact [mubeennasir117@gmail.com](mailto:mubeennasir117@gmail.com).
